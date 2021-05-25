@@ -1,12 +1,6 @@
-# h3_tools
+A tool to apply h3's polyfill to GeoJSON.
 
-Originally just a tool to apply [H3's](https://eng.uber.com/h3/) polyfill to GeoJSON, but will mostly likely become a collection of tools to work with geotypes and H3. This'll most likely be expanded to include other types such as WKT or various WKBs.
-
-## Contributing
-this was a personal tool, updates will only happen once I get annoyed enough with a type to add compatibility. If you get the same way about another type, feel free to drop a PR.
-
-## Caveats
-This tool uses [geo-json's](https://github.com/georust/geojson) `quick_collection` function. see [this documentation](https://docs.rs/geojson/0.21.0/geojson/index.html#conversion-to-geo-objects) for more information.
+Caveats: This tool uses [geo-json's](https://github.com/georust/geojson) `quick_collection` function. see https://docs.rs/geojson/0.21.0/geojson/index.html#conversion-to-geo-objects
 
 Example:
 
@@ -57,3 +51,4 @@ $ echo '{
 622247186430754815
 622247186430918655
 ```
+Caveats: This tool uses the `quick_collection` function. see https://docs.rs/geojson/0.21.0/geojson/index.html#conversion-to-geo-objects

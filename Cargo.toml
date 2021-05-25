@@ -1,0 +1,19 @@
+[package]
+name = "geo_polyfill"
+version = "0.1.0"
+edition = "2018"
+authors = ["Sam Watkins <sam@eltoro.com>"]
+
+[dependencies]
+anyhow      = "*"
+geojson     = { version = "0.21", features = ["geo-types"] }
+geo-types   = "0.6"
+h3ron       = "0.10"
+itertools   = "*"
+rayon       = "*"
+structopt   = "*"
+
+[profile.release]
+opt-level        = 3
+lto              = true
+codegen-units    = 1
